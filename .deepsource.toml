@@ -1,28 +1,16 @@
 version = 1
 
-exclude_patterns = [
-  "vendor/**"
-]
-
 [[analyzers]]
-name = "go"
-enabled = true
+name = "javascript"
 
   [analyzers.meta]
-  import_paths = ["github.com/ankitdobhal/goreplay"]
-
-[[analyzers]]
-name = "docker"
-enabled = true
+  environment = ["jquery"]
 
 [[analyzers]]
 name = "ruby"
-enabled = true
 
 [[analyzers]]
-name = "javascript"
-enabled = true
+name = "go"
 
   [analyzers.meta]
-  environment = ["nodejs"]
-
+  import_root = "github.com/mosheeshel/goreplay"
